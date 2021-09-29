@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Header from './components/Header/Header';
 import FriendDetails from './components/FriendDetails/FriendDetails';
+import PostDetails from './components/PostDetails/PostDetails';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/posts/:postId">
+            <PostDetails></PostDetails>
           </Route>
           <Route path="/friends">
             <Friends></Friends>
